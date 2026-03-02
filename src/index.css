@@ -31,12 +31,20 @@ body::before {
     radial-gradient(1.5px 1.5px at 350px 500px, white, transparent),
     radial-gradient(2px 2px at 700px 600px, white, transparent),
     radial-gradient(1.5px 1.5px at 900px 700px, white, transparent),
-    radial-gradient(2px 2px at 1100px 200px, white, transparent);
+    radial-gradient(2px 2px at 1100px 200px, white, transparent),
+    radial-gradient(1px 1px at 100px 100px, white, transparent),
+    radial-gradient(2px 2px at 300px 350px, white, transparent),
+    radial-gradient(1.5px 1.5px at 500px 150px, white, transparent),
+    radial-gradient(2px 2px at 750px 450px, white, transparent),
+    radial-gradient(1px 1px at 950px 250px, white, transparent),
+    radial-gradient(2px 2px at 1200px 500px, white, transparent),
+    radial-gradient(1.5px 1.5px at 1350px 300px, white, transparent),
+    radial-gradient(2px 2px at 1600px 600px, white, transparent);
   background-repeat: repeat;
-  background-size: 600px 600px;
+  background-size: 350px 350px;
   animation: moveStars 60s linear infinite;
   z-index: -1;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 /* ===== STAR ANIMATION ===== */
@@ -48,15 +56,6 @@ body::before {
   to {
     transform: translateY(-1000px);
   }
-}
-
-/* ===== PROFESSIONAL BLUE GLOW BORDER ===== */
-
-.neon-border {
-  border: 2px solid #2563EB;
-  box-shadow:
-    0 0 25px rgba(92, 107, 138, 0.111),
-    0 0 35px rgba(28, 35, 55, 0.75);
 }
 
 /* ===== GLASS EFFECT ===== */
@@ -75,4 +74,239 @@ a {
   text-decoration: none;
   color: rgb(181, 201, 215);
   padding: 15px;
+}
+/* Center wrapper */
+.event-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+/* Main Card */
+.event-card {
+  position: relative;
+  width: 950px;         /* smaller width */
+  height: 570px;        /* smaller height */
+  border-radius: 20px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid rgba(19, 26, 41, 0.75);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  justify-content: center;
+}
+
+/* Hover effect */
+.event-card:hover {
+  border-color: #091b30;
+  box-shadow: 0 0 34px #0e2035;
+  transform: scale(1.12);
+}
+
+/* Dark overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+/* Content */
+.event-content {
+  position: relative;
+  z-index: 2;
+  padding: 25px;
+  text-align: center;
+  color:rgb(181, 201, 215);
+}
+
+/* Text styling */
+.event-number {
+  color: #f87171;
+  letter-spacing: 2px;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.event-title {
+  font-size: 55px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.event-description {
+  font-size: 22px;
+  color:rgb(181, 201, 215);
+  margin-bottom: 20px;
+  margin-top: 45px;
+}
+
+/* Button */
+.event-button {
+  margin-top: 50px;
+  background-color: #041425;
+  color:rgb(181, 201, 215);
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+  
+  font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.event-button:hover {
+  background-color: #0e2035;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #0e2035;
+}
+/* ===== NAVBAR MAIN ===== */
+.navbar {
+  height: 80px;
+  width: 100%;
+  position: fixed;        /* stays at top */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+
+  /* Glass effect */
+  background: rgba(12, 17, 29, 0.75);
+  backdrop-filter: blur(12px);
+
+  /* Neon border */
+  box-shadow: 0 0 25px #0a1725;
+}
+
+/* ===== INNER CONTAINER ===== */
+.navbar-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0;   /* same as px-12 */
+}
+
+/* ===== LOGO ===== */
+.logo {
+  font-size: 46px;
+  padding: 20px;
+  margin: 0;
+}
+
+/* ===== LINKS ===== */
+.nav-links {
+  margin-left: auto;    /* pushes links to right */
+  display: flex;
+  gap: 12px;           /* same as gap-32 */
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(181, 201, 215);
+  transition: 0.3s ease;
+}
+
+/* Hover Effects */
+.nav-links a:hover {
+  color:  rgb(36, 64, 83);
+  text-shadow: 0 2 5px rgb(58, 99, 128),
+               0 0 16px rgb(55, 91, 117);
+  transform: scale(1.10);            
+}
+/* ===== EVENT DETAILS WRAPPER ===== */
+.details-wrapper {
+  min-height: 100vh;          /* full screen height */
+  display: flex;
+  justify-content: center;    /* horizontal center */
+  align-items: center;        /* vertical center */
+  padding: 120px 20px 60px; 
+  padding-top: 50px;  /* top space for navbar */
+}
+/* ===== DETAILS CARD ===== */
+.details-card {
+  position: relative;
+  width: 700px;
+  height: 700px;
+  padding: 50px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(19, 26, 41, 0.75);
+  box-shadow: 0 0 34px #0e2035;
+  color: rgb(181, 201, 215);
+  transition: 0.3s ease;
+  cursor: pointer;
+  flex: auto;
+}
+.details-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+}
+.details-content {
+  position: relative;
+  z-index: 2;
+  color: rgb(181, 201, 215);
+  
+}
+.details-card:hover {
+  transform: scale(1.02);
+}
+
+/* ===== TITLE ===== */
+.details-title {
+  font-size: 55px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+/* ===== DESCRIPTION ===== */
+.details-description {
+  font-size: 22px;
+  margin-bottom: 35px;
+}
+
+/* ===== INFO SECTION ===== */
+.details-info p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+/* ===== GUIDELINES ===== */
+.details-guidelines {
+  margin-top: 30px;
+  padding-left: 25px;
+  font-size: 19px;
+}
+
+.details-guidelines li {
+  margin-bottom: 10px;
+}
+
+/* ===== BUTTON ===== */
+.details-button {
+  margin-top: 50px;
+  background-color: #041425;
+  color: rgb(181, 201, 215);
+  padding: 12px 30px;
+  border-radius: 8px;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.details-button:hover {
+  background-color: #000000;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #0e2035;
+  
 }
