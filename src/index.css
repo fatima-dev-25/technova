@@ -219,6 +219,66 @@ a {
               0 0 2px #152639;
   border-radius: 4px;
 }
+@media (max-width: 640px) {
+  .navbar {
+    height: auto; /* allow height to grow */
+    padding: 10px 20px;
+  }
+
+  .navbar-container {
+    flex-direction: column; /* stack vertically */
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .logo {
+    font-size: 28px; /* smaller logo */
+    padding: 0;
+  }
+
+  .nav-links {
+    margin-left: -5px;
+    flex-direction: column; /* vertical links */
+    width: 100%;
+    gap: 5px;
+    flex-direction: row;
+  }
+
+  .nav-links a {
+    font-size: 18px;
+    padding: 6px 10px;
+  }
+}
+@media (max-width: 640px) {
+  .event-card {
+    width: 90%; /* nearly full width */
+    height: auto; /* height adapts */
+    margin-bottom: -40px;
+  }
+
+  .event-title {
+    font-size: 28px;
+  }
+
+  .event-description {
+    font-size: 18px;
+    margin-top: 25px;
+  }
+
+  .event-number {
+    font-size: 20px;
+  }
+
+  .event-button {
+    font-size: 20px;
+    padding: 6px 14px;
+    margin-top: 30px;
+  }
+
+  .event-content {
+    padding: 15px;
+  }
+}
 
 /*= EVENT DETAILS WRAPPER ===== */
 .details-wrapper {
@@ -273,6 +333,23 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 640px) {
+  .top-section {
+    flex-direction: column; /* stack vertically */
+    align-items: flex-start; /* align title and button to left */
+    gap: 5px; /* spacing between title and button */
+  }
+
+  .details-title {
+    font-size: 28px; /* smaller font for mobile */
+    margin-bottom: 15px;
+  }
+
+  .register-button {
+    font-size: 10px;
+    padding: 8px 14px;
+  }
+}
 .info-box {
   flex: 1;
   margin-top: 30px;
@@ -281,11 +358,28 @@ a {
   background: rgba(253, 253, 253, 0.021);
   backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.041);
+  min-width: 100px;
+}
+@media (max-width: 640px) {
+  .info-row {
+    flex-direction: column; /* stack the boxes */
+    gap: 20px; /* spacing between stacked boxes */
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .info-box {
+    /* take full width */
+    padding: 9px; /* slightly smaller padding */
+    margin-left: -35px;
+    margin-right: -40px;
+  }
 }
 .info-row {
   display: flex;
   gap: 30px;
   margin-top: 30px;
+  flex-wrap: wrap;
 }
 .info-box ul {
   padding-left: 20px; 
@@ -312,6 +406,7 @@ a {
   margin-top: 30px;
   display: flex;
   gap: 20px;
+  flex-wrap: wrap; 
 }
 
 .bottom-box {
@@ -322,6 +417,18 @@ a {
   backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.041);
   text-align: center;
+}
+@media (max-width: 640px) {
+  .bottom-row {
+    flex-direction: column; /* stack boxes */
+    gap: 15px; /* spacing between boxes */
+  }
+
+  .bottom-box {
+    width: 100%; /* full width */
+    padding: 10px; /* slightly smaller padding */
+    margin-left: -10px;
+  }
 }
 .register-button {
   background: #041425;
@@ -418,6 +525,21 @@ a {
   color: rgb(181, 201, 215);
 
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 640px) {
+  .home-container {
+    height: 100vh;
+    width:100vw;  /* reduce height for small screens */
+    justify-content: center;
+    align-items: center;
+    background-attachment: scroll; /* avoids mobile parallax glitches */
+  }
+  .event-date {
+    font-size: 18px;
+    bottom: 15px;
+    right: 15px;
+    text-align: center;
+  }
 }
 .contact-wrapper {
   padding: 120px 20px 60px;
