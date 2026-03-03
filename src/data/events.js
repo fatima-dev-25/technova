@@ -11,7 +11,7 @@ import debate from "../assets/Images/debate.jpg";
 const events = [
   {
     id: 1,
-    title: "Nova Spark",
+    title: "Nova Spark \u00A0- \u00A0Ideathon",
     original: "Ideathon",
     description:
       "Present innovative solutions to real-world problems and compete with the best ideas.",
@@ -52,7 +52,7 @@ const events = [
 
   {
     id: 2,
-    title: "Nova Nexus",
+    title: "Nova Nexus\u00A0 - \u00A0Technical Quiz",
     original: "Technical Quiz",
     description:
       "Test your technical knowledge and compete in an exciting multi-round quiz challenge.",
@@ -96,7 +96,7 @@ const events = [
 
   {
     id: 3,
-    title: "Nova ActX",
+    title: "Nova ActX\u00A0 - \u00A0Dumb Charades",
     original: "Dumb Charades",
     description:
       "Act it out without words and let your team guess the technical term in this fun-filled challenge",
@@ -135,7 +135,7 @@ const events = [
 
   {
     id: 4,
-    title: "Nova Run",
+    title: "Nova Run\u00A0 - \u00A0Code Relay",
     original: "Code Relay",
     description:
       "A relay-style coding competition where each member solves one question in sequence.",
@@ -162,7 +162,7 @@ const events = [
 
   {
     id: 5,
-    title: "Mind the Matrix",
+    title: "Mind the Matrix\u00A0 - \u00A0Connections",
     original: "Connections",
     description:
       "Identify the hidden technical connection between image clues and score points with quick logical thinking.",
@@ -189,7 +189,7 @@ const events = [
 
   {
     id: 6,
-    title: "Byte Blaze",
+    title: "Byte Blaze\u00A0 - \u00A0Treasure Hunt",
     original: "Treasure Hunt",
     description:
       "Solve clues, decode challenges, and race against time to find the hidden treasure.",
@@ -228,7 +228,7 @@ const events = [
 
   {
     id: 7,
-    title: "Tech Troll",
+    title: "Tech Troll\u00A0 - \u00A0Memes",
     original: "Tech Meme",
     description:
       "Turn technical concepts into creative, relatable memes by blending logic with humor.",
@@ -253,7 +253,7 @@ const events = [
 
   {
     id: 8,
-    title: "PromptX Nova",
+    title: "PromptX Nova\u00A0 - \u00A0AI Prompting",
     original: "AI Prompting",
     description:
       "Craft powerful AI prompts to generate creative and optimized outputs within constraints.",
@@ -265,9 +265,9 @@ const events = [
       "Time limits strictly followed."
     ],
     flow: [
-      { title: "Basic Round", details: "Simple prompting tasks." },
-      { title: "Advanced Round", details: "Optimization challenge." },
-      { title: "Final Round", details: "Real-time refinement task." }
+      { title: "Basic Round", details: "Participants will be given simple tasks." },
+      { title: "Advanced Round", details: "Complex tasks like generate a business idea, create UI/UX ideas." },
+      { title: "Final Round", details: "Real-time problem solving challenge" }
     ],
     time: "1:30 - 2:15 PM",
     venue: "A22",
@@ -279,7 +279,7 @@ const events = [
 
   {
     id: 9,
-    title: "Tech Verdict",
+    title: "Tech Verdict\u00A0 - \u00A0Debate",
     original: "Debate",
     description:
       "Participate in a dynamic two-round debate where teams battle with logic and confidence.",

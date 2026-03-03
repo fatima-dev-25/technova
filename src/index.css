@@ -130,7 +130,7 @@ a {
 }
 
 .event-title {
-  font-size: 55px;
+  font-size: 45px;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -191,7 +191,7 @@ a {
 
 /* ===== LOGO ===== */
 .logo {
-  font-size: 46px;
+  font-size: 40px;
   padding: 20px;
   margin: 0;
 }
@@ -214,9 +214,9 @@ a {
 
 /* Hover Effects */
 .nav-links a:hover {
-  color: #29425f;
-  box-shadow: 0 0 8px #29425f,
-              0 0 16px #29425f;
+  color: #122233;
+  box-shadow: 0 0 3px #152639,
+              0 0 2px #152639;
   border-radius: 4px;
 }
 
@@ -264,7 +264,7 @@ a {
 
 /* ===== TITLE ===== */
 .details-title {
-  font-size: 55px;
+  font-size: 45px;
   margin-bottom: 25px;
   font-weight: bold;
 }
@@ -289,13 +289,15 @@ a {
 }
 .info-box ul {
   padding-left: 20px; 
-  font-size: 40px;  /* proper bullet spacing */
+  font-size: 40px;
+  /* proper bullet spacing */
 }
 
 .info-box li {
   margin-bottom: 10px;  /* space between each point */
   line-height: 1.6;
-  font-size: 18px;     /* better readability */
+  font-size: 18px; 
+      /* better readability */
 }
 .flow-item {
   margin-bottom: 15px;
@@ -423,7 +425,7 @@ a {
   color: rgb(181, 201, 215);
 }
 .contact-title {
-  font-size: 60px;
+  font-size: 35px;
   color: rgb(181, 201, 215);
   margin-bottom: 10px;
 }
@@ -431,6 +433,7 @@ a {
 .contact-subtitle {
   color: rgb(181, 201, 215);
   margin-bottom: 50px;
+  font-size: 18px;
 }
 .contact-row {
   display: flex;
