@@ -11,42 +11,148 @@ import debate from "../assets/Images/debate.jpg";
 const events = [
   {
     id: 1,
+    title: "Nova Spark",
+    original: "Ideathon",
+    description:
+      "Present innovative solutions to real-world problems and compete with the best ideas.",
+     guidelines: [
+    "Each team must consist of 2–4 members.",
+    "A participant can be part of only one team.",
+    "Ideas must align with the given theme",
+    "Solutions should be innovative, feasible, and impactful.",
+    "Pre-registration is mandatory (on-spot allowed if slots available).",
+    "Each team gets 5 minutes for presentation and 2–3 minutes for Q&A.",
+    "Plagiarism is strictly prohibited.",
+    "Judges’ decision will be final."
+  ],
+      flow: [
+    {
+      title: "Round 1 – Idea Submission",
+      details:
+        "Teams submit their problem statement and core idea related to the given theme."
+    },
+    {
+      title: "Round 2 – Presentation",
+      details:
+        "Each team presents their solution including problem statement, proposed solution, technology used, target users, implementation plan, and expected impact."
+    },
+    {
+      title: "Round 3 – Q&A Session",
+      details:
+        "Judges evaluate the idea based on innovation, feasibility, impact, and response to questions."
+    },
+  ],
+    time: "8:15 - 9:15 AM",
+    venue: "G01",
+    head: "Sharini",
+    teamSize: "4 Members",
+    formLink: "https://forms.gle/6wknFvxBgSYFfC7a7",
+    image: ideathon
+  },
+
+  {
+    id: 2,
+    title: "Nova Nexus",
+    original: "Technical Quiz",
+    description:
+      "Test your technical knowledge and compete in an exciting multi-round quiz challenge.",
+    guidelines: [
+    "Each team must consist of 2–3 members.",
+    "Participants must register before the event.",
+    "Only one member can answer on behalf of the team.",
+    "Use of mobile phones or unfair means is strictly prohibited.",
+    "Points will be awarded for correct answers only.",
+    "Judges’ decision will be final."
+    ],
+  flow: [
+    {
+      title: "Round 1 – Preliminary Round",
+      details:
+        "A set of multiple-choice or rapid-fire questions will be asked. Teams with highest scores qualify for the next round."
+    },
+    {
+      title: "Round 2 – Technical Challenge",
+      details:
+        "Questions based on core technical concepts like programming, AI, cybersecurity, networking, and general technology trends."
+    },
+    {
+      title: "Round 3 – Rapid Fire / Buzzer Round",
+      details:
+        "Fast-paced questions where teams must answer quickly to gain points."
+    },
+    {
+      title: "Final Evaluation",
+      details:
+        "The team with the highest total points will be declared the winner and runner-up."
+    }
+  ],
+    time: "9:15 - 9:50 AM",
+    venue: "G01",
+    head: "Austin Djay",
+    teamSize: "2-3 Members",
+    formLink: "https://forms.gle/4sAMbUUZf6vTwF7k6",
+    image: quiz
+  },
+
+  {
+    id: 3,
+    title: "Nova ActX",
+    original: "Dumb Charades",
+    description:
+      "Act it out without words and let your team guess the technical term in this fun-filled challenge",
+    guidelines: [
+    "Each team must consist of 2–3 members.",
+    "Only actions and gestures are allowed — no speaking or lip movement.",
+    "Use of mobile phones or external help is strictly prohibited.",
+    "Each team will get a fixed time limit to guess the word.",
+    "Skipping may be allowed with penalty (if applicable).",
+    "Judges’ decision will be final."
+   ],
+    flow: [
+    {
+      title: "Round 1 – Technical Terms",
+      details:
+        "Teams act out basic technical words or concepts within the given time limit."
+    },
+    {
+      title: "Round 2 – Rapid Guess",
+      details:
+        "Teams must guess as many technical terms as possible in a short time to score maximum points."
+    },
+    {
+      title: "Final Scoring",
+      details:
+        "The team with the highest total correct guesses will be declared the winner."
+    }
+  ],
+    time: "10:10 am- 11:30 am",
+    venue: "G01",
+    head: "Venu Aravind",
+    teamSize: "3 Members",
+    formLink: "https://forms.gle/LMUkjqyyn9MwFEF16",
+    image: Dumb
+  },
+
+  {
+    id: 4,
     title: "Nova Run",
     original: "Code Relay",
     description:
       "A relay-style coding competition where each member solves one question in sequence.",
     guidelines: [
-      "Each team must consist of 3–4 members.",
-      "Only one system will be provided per team.",
-      "Teams must complete questions sequentially.",
-      "Only the active coder can use the keyboard.",
-      "No internet or external devices allowed.",
-      "Only provided IDE and compiler permitted.",
-      "Judging based on correctness and efficiency."
+      "Teams of 3–4 members.",
+      "Only one system per team.",
+      "Sequential problem solving mandatory.",
+      "No internet allowed.",
+      "Judging based on output and efficiency."
     ],
     flow: [
-      {
-        title: "Round 1",
-        details: "First member solves Question 1 within the time limit."
-      },
-      {
-        title: "Round 2",
-        details: "Second member solves Question 2 after Q1 completion."
-      },
-      {
-        title: "Round 3",
-        details: "Third member solves Question 3."
-      },
-      {
-        title: "Round 4",
-        details: "Fourth member solves Question 4."
-      },
-      {
-        title: "Final Submission",
-        details: "All solutions are evaluated and winners are announced."
-      }
+      { title: "Round 1", details: "First member solves Question 1." },
+      { title: "Round 2", details: "Second member solves Question 2." },
+      { title: "Round 3", details: "Third member solves Question 3." },
+      { title: "Round 4", details: "Fourth member solves Question 4." }
     ],
-    time: "10:10 AM - 11:30 AM",
+    time: "10:10 - 11:30 AM",
     venue: "A22 Lab",
     head: "Sharini",
     teamSize: "4 Members",
@@ -55,43 +161,25 @@ const events = [
   },
 
   {
-    id: 2,
+    id: 5,
     title: "Mind the Matrix",
-    original: "Technical Connection",
+    original: "Connections",
     description:
       "Identify the hidden technical connection between image clues and score points with quick logical thinking.",
     guidelines: [
       "Teams of 2–3 members.",
-      "Only one member may answer.",
-      "Each question contains 2–4 image clues.",
-      "Answer cannot be modified once given.",
+      "One member raises hand to answer.",
+      "Each question has 2–4 image clues.",
       "Incorrect answers pass to other teams.",
-      "1 point per correct answer.",
-      "Judges' decision is final."
+      "1 point per correct answer."
     ],
     flow: [
-      {
-        title: "Question Display",
-        details: "Image clues are displayed for analysis."
-      },
-      {
-        title: "Discussion",
-        details: "Teams discuss internally within time limit."
-      },
-      {
-        title: "Answer Attempt",
-        details: "One member raises hand to answer."
-      },
-      {
-        title: "Scoring",
-        details: "Correct answers earn 1 point."
-      },
-      {
-        title: "Result",
-        details: "Highest score wins."
-      }
+      { title: "Clue Display", details: "Images displayed to all teams." },
+      { title: "Discussion", details: "Teams discuss internally." },
+      { title: "Answer Attempt", details: "One response allowed per team." },
+      { title: "Scoring", details: "Correct answer earns 1 point." }
     ],
-    time: "11:30 AM - 12:40 PM",
+    time: "11:30 - 12:40 PM",
     venue: "G01",
     head: "Narayani",
     teamSize: "2-3 Members",
@@ -100,34 +188,62 @@ const events = [
   },
 
   {
-    id: 3,
+    id: 6,
+    title: "Byte Blaze",
+    original: "Treasure Hunt",
+    description:
+      "Solve clues, decode challenges, and race against time to find the hidden treasure.",
+      guidelines: [
+    "Each team must consist of 2–4 members.",
+    "Teams must stay together throughout the event.",
+    "Clues must not be damaged or removed from their location.",
+    "Use of mobile phones may be restricted as per rules.",
+    "Any form of unfair means will lead to disqualification.",
+    "Judges’ decision will be final."
+   ],
+      flow: [
+    {
+      title: "Round 1 – Clue Decoding",
+      details:
+        "Teams solve technical or logical riddles to unlock the next location."
+    },
+    {
+      title: "Round 2 – On-Field Hunt",
+      details:
+        "Participants search for hidden clues by solving puzzles and completing tasks."
+    },
+    {
+      title: "Final Treasure",
+      details:
+        "The first team to solve all clues and reach the final destination wins the treasure."
+    }
+  ],
+    time: "11:30 - 12:40 PM",
+    venue: "A22",
+    head: "Fatima Theresa-",
+    teamSize: "3-4 Members",
+    formLink: "https://forms.gle/MUqzvbLk74Q8igJP8",
+    image: hunt
+  },
+
+  {
+    id: 7,
     title: "Tech Troll",
     original: "Tech Meme",
     description:
-      "Turn technical concepts into creative and relatable memes by blending logic with humor.",
+      "Turn technical concepts into creative, relatable memes by blending logic with humor.",
     guidelines: [
       "Teams of 2–3 members.",
       "Meme must be original.",
       "Created during event time.",
-      "Must include caption and technical concept.",
-      "Offensive content leads to disqualification.",
-      "Judges’ decision is final."
+      "Offensive content leads to disqualification."
     ],
     flow: [
-      {
-        title: "Topic Allocation",
-        details: "Each team receives a technical topic."
-      },
-      {
-        title: "Meme Creation",
-        details: "Teams design meme within 30 minutes."
-      },
-      {
-        title: "Presentation",
-        details: "Teams explain concept and humor logic."
-      }
+      { title: "Topic Allocation", details: "Technical topic given to team." },
+      { title: "Creation", details: "Design meme within time limit." },
+      { title: "Presentation", details: "Explain technical concept and humor." }
     ],
-    time: "1:30 PM - 2:15 PM",
+    time: "1:30 - 2:15 PM",
     venue: "G01",
     head: "Narayani",
     teamSize: "2-3 Members",
@@ -136,7 +252,7 @@ const events = [
   },
 
   {
-    id: 4,
+    id: 8,
     title: "PromptX Nova",
     original: "AI Prompting",
     description:
@@ -146,24 +262,14 @@ const events = [
       "Only provided AI tools permitted.",
       "No plagiarism allowed.",
       "Prompt history must be shown.",
-      "Time limits strictly followed.",
-      "Judges’ decision is final."
+      "Time limits strictly followed."
     ],
     flow: [
-      {
-        title: "Round 1",
-        details: "Basic prompting tasks."
-      },
-      {
-        title: "Round 2",
-        details: "Advanced optimization challenge."
-      },
-      {
-        title: "Final Round",
-        details: "Surprise real-time refinement challenge."
-      }
+      { title: "Basic Round", details: "Simple prompting tasks." },
+      { title: "Advanced Round", details: "Optimization challenge." },
+      { title: "Final Round", details: "Real-time refinement task." }
     ],
-    time: "1:30 PM - 2:15 PM",
+    time: "1:30 - 2:15 PM",
     venue: "A22",
     head: "Belsi Sirina",
     teamSize: "1-2 Members",
@@ -172,33 +278,23 @@ const events = [
   },
 
   {
-    id: 5,
+    id: 9,
     title: "Tech Verdict",
     original: "Debate",
     description:
-      "Engage in structured tech debates and defend your stance with logic and confidence.",
+      "Participate in a dynamic two-round debate where teams battle with logic and confidence.",
     guidelines: [
-      "Strictly follow time limits.",
+      "Strictly adhere to time limits.",
       "Only registered members may speak.",
       "No offensive language.",
-      "Arguments must be relevant.",
-      "Judges’ decision is final."
+      "Judges decision is final."
     ],
     flow: [
-      {
-        title: "Preliminary Round",
-        details: "All teams present arguments."
-      },
-      {
-        title: "Final Round",
-        details: "Top teams compete with rebuttals."
-      },
-      {
-        title: "Result",
-        details: "Winner and Runner-up declared."
-      }
+      { title: "Preliminary Round", details: "All teams debate." },
+      { title: "Final Round", details: "Top teams compete." },
+      { title: "Result", details: "Winner and Runner-Up declared." }
     ],
-    time: "2:15 PM - 3:00 PM",
+    time: "2:15 - 3:00 PM",
     venue: "Main Auditorium",
     head: "Prof. Orion",
     teamSize: "2-3 Members",

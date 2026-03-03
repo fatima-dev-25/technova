@@ -1,24 +1,29 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import PageWrapper from "../components/PageWrapper";
 import events from "../data/events";
 import "../index.css";
 
 function EventDetails() {
   const { id } = useParams();
+  const navigate = useNavigate();
   const event = events.find((e) => e.id === parseInt(id));
 
   if (!event) {
     return (
       <PageWrapper>
-        <div className="min-h-screen flex items-center justify-center text-white text-2xl">
-          Event not found
-        </div>
+        <div className="not-found">Event not found</div>
       </PageWrapper>
     );
   }
 
   return (
     <PageWrapper>
+      
+      {/* 🔙 Back Button OUTSIDE */}
+      <button className="back-button" onClick={() => navigate(-1)}>
+        ← Back
+      </button>
+
       <div className="details-wrapper">
         <div
           className="details-card"
@@ -27,48 +32,59 @@ function EventDetails() {
           <div className="details-overlay"></div>
 
           <div className="details-content">
-            <h1 className="details-title">{event.title}</h1>
 
-            <p className="details-description">{event.description}</p>
+            {/* Title + Register Button Row */}
+            <div className="top-section">
+              <h1 className="details-title">{event.title}</h1>
 
-            <div className="details-info">
-              <p><strong>Time:</strong> {event.time}</p>
-              <p><strong>Venue:</strong> {event.venue}</p>
-              <p><strong>Head:</strong> {event.head}</p>
-              <p><strong>Team Size:</strong> {event.teamSize}</p>
+              <button
+                className="register-button"
+                onClick={() => window.open(event.formLink, "_blank")}
+              >
+                Register Now
+              </button>
             </div>
 
-            {event.guidelines && (
-              <>
-                <h2 className="details-subtitle">Guidelines</h2>
-                <ul className="details-guidelines">
-                  {event.guidelines.map((g, i) => (
-                    <li key={i}>{g}</li>
-                  ))}
-                </ul>
-              </>
-            )}
+            {/* Guidelines + Event Flow Row */}
+<div className="info-row">
 
-            {event.flow && (
-              <>
-                <h2 className="details-subtitle">Event Flow</h2>
-                <div className="details-flow">
-                  {event.flow.map((step, index) => (
-                    <div key={index} className="flow-item">
-                      <h4>{step.title}</h4>
-                      <p>{step.details}</p>
-                    </div>
-                  ))}
-                </div>
-              </>
-            )}
+  <div className="info-box">
+    <h2>Guidelines</h2>
+    <ul>
+      {event.guidelines.map((g, i) => (
+        <li key={i}>{g}</li>
+      ))}
+    </ul>
+  </div>
 
-            <button
-              className="details-button"
-              onClick={() => window.open(event.formLink, "_blank")}
-            >
-              Register Now
-            </button>
+  <div className="info-box">
+    <h2>Event Flow</h2>
+    {event.flow.map((step, index) => (
+      <div key={index} className="flow-item">
+        <p><strong>{step.title} :</strong> {step.details}</p>
+      </div>
+    ))}
+  </div>
+
+</div>
+
+            <div className="bottom-row">
+  <div className="bottom-box">
+    <p><strong>Time : </strong>
+    {event.time}</p>
+  </div>
+
+  <div className="bottom-box">
+    <p><strong>Venue : </strong>
+    {event.venue}</p>
+  </div>
+
+  <div className="bottom-box">
+    <p><strong>Head : </strong>
+    {event.head}</p>
+  </div>
+</div>
+
           </div>
         </div>
       </div>

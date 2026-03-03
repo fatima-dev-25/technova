@@ -1,16 +1,52 @@
 import PageWrapper from "../components/PageWrapper";
+import "../index.css";
 
 function Contact() {
   return (
     <PageWrapper>
-      <div className="pt-28 max-w-4xl mx-auto text-center glass neon-border p-8 rounded-xl">
-        <h1 className="text-4xl text-blue-400 mb-6">
-          Contact Technova
-        </h1>
+      <div className="contact-wrapper">
 
-        <p>Email: technova@gmail.com</p>
-        <p>Phone: +91 9876543210</p>
-        <p>Location: XYZ Engineering College</p>
+        {/* Title Section */}
+        <h1 className="contact-title">CONTACT US</h1>
+        <p className="contact-subtitle">
+          Get in touch with us for any questions about Flair 2K25. We're here to help!
+        </p>
+
+        {/* Contact Cards Row */}
+        <div className="contact-row">
+
+          {/* Left Card */}
+          <div className="contact-card">
+            <div className="contact-card-content">
+              <h2 className="card-heading">TECH NOVA</h2>
+              <p className="card-text">
+                Dive into TechNova, where technology meets imagination and ideas become reality.
+              </p>
+
+              <div className="card-info">
+                <p>📍 LICET, Loyola Campus, Chennai </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Card */}
+          <div className="contact-card">
+            <div className="contact-card-content">
+              <h2 className="card-heading">CONTACT INFORMATION</h2>
+
+              <div className="contact-section">
+                <h4>FOR QUERIES CONTACT</h4>
+                <p>👤 -------------------</p>
+                <p>👤 --------------------</p>
+              </div>
+
+              
+
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </PageWrapper>
   );
