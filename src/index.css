@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
   color: rgb(181, 201, 215);
-  background: radial-gradient(ellipse at bottom, #111827 0%, #0B0F19 60%, #000000 100%);
+  background: radial-gradient(ellipse at bottom, #080b12 0%, #0a0d16 60%, #000000 100%);
   overflow-x: hidden;
 }
 
@@ -86,8 +86,8 @@ a {
 /* Main Card */
 .event-card {
   position: relative;
-  width: 950px;         /* smaller width */
-  height: 570px;        /* smaller height */
+  width: 800px;         /* smaller width */
+  height: 500px;        /* smaller height */
   border-radius: 20px;
   overflow: hidden;
   background-size: cover;
@@ -102,7 +102,7 @@ a {
 .event-card:hover {
   border-color: #091b30;
   box-shadow: 0 0 34px #0e2035;
-  transform: scale(1.12);
+  transform: scale(1.06);
 }
 
 /* Dark overlay */
@@ -309,4 +309,31 @@ a {
   transform: scale(1.05);
   box-shadow: 0 0 20px #0e2035;
   
+}
+.home-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  background-size: cover;       /* Makes image fill full screen */
+  background-position: center;  /* Keeps image centered */
+  background-repeat: no-repeat; /* Prevent repeat */
+  background-attachment: fixed; /* Makes it look premium */
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+/* Bottom Right Text */
+.event-date {
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(181, 201, 215);
+
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
 }

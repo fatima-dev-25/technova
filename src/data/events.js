@@ -11,7 +11,7 @@ import { image } from "framer-motion/client";
 const events = [
   {
     id: 1,
-    title: "NovaSpark",
+    title: "Nova Spark",
     original: "Ideathon",
     description:
       "A high-intensity idea battle where participants brainstorm innovative solutions to real-world tech problems within a limited time.",
@@ -25,12 +25,12 @@ const events = [
     head: "Sharini",
     teamSize: "2-3 Members",
     formLink:
-      "https://docs.google.com/forms/d/1_RB9qu1uzKiTqXKKfXTd8cFbulSCFOPbE2mkeVM6b1I/edit",
+      "https://forms.gle/6wknFvxBgSYFfC7a7",
     image: ideathon,
   },
   {
     id: 2,
-    title: "Cryptic Cognition",
+    title: "Nova Nexus",
     original: "Technical Quiz",
     description:
       "A thrilling quiz battle covering programming, AI, cybersecurity, and emerging technologies.",
@@ -43,12 +43,12 @@ const events = [
     venue: "G01",
     head: "Austin Djay",
     teamSize: "2-3 Members",
-    formLink: "PASTE_GOOGLE_FORM_LINK_2",
+    formLink: "https://forms.gle/4sAMbUUZf6vTwF7k6",
     image: quiz,
   },
   {
     id: 3,
-    title: "Shadow Signals",
+    title: "Nova ActX",
     original: "Dumb Charades",
     description:
       "Act out technical words and concepts without speaking while your team guesses the correct term.",
@@ -61,12 +61,12 @@ const events = [
     venue: "G01",
     head: "Venu Aravind",
     teamSize: "3 Members",
-    formLink: "PASTE_GOOGLE_FORM_LINK_3",
+    formLink: "https://forms.gle/LMUkjqyyn9MwFEF16",
     image:Dumb,
   },
   {
     id: 4,
-    title: "Midnight Code Rush",
+    title: "Nova Run",
     original: "Code Relay",
     description:
       "A relay-style coding challenge where teammates solve parts of a problem sequentially under time pressure.",
@@ -79,12 +79,12 @@ const events = [
     venue: "A22 Lab",
     head: "Sharini",
     teamSize: "4 Members",
-    formLink: "PASTE_GOOGLE_FORM_LINK_4",
+    formLink: "https://forms.gle/wH3XiwiuDoDR4RPK8",
     image: code,
   },
   {
     id: 5,
-    title: "Web of Whispers",
+    title: " Mind the Matrix",
     original: "Connections",
     description:
       "Find hidden connections between seemingly unrelated tech clues in this brain-twisting challenge.",
@@ -97,12 +97,12 @@ const events = [
     venue: "G01",
     head: "Narayani",
     teamSize: "2-3 Members",
-    formLink: "PASTE_GOOGLE_FORM_LINK_5",
+    formLink: "https://forms.gle/uWgo6XmNKFa5P4tn7",
     image: conn,
   },
   {
     id: 6,
-    title: "Haunted Hunt",
+    title: "Byte Blaze",
     original: "Treasure Hunt",
     description:
       "A campus-wide tech-themed treasure hunt filled with puzzles, riddles, and hidden QR codes.",
@@ -115,12 +115,12 @@ const events = [
     venue: "A22",
     head: "Prof. Moon",
     teamSize: "3-4 Members",
-    formLink: "PASTE_GOOGLE_FORM_LINK_6",
+    formLink: "https://forms.gle/MUqzvbLk74Q8igJP8",
     image: hunt,
   },
   {
     id: 7,
-    title: "Meme from the Crypt",
+    title: " Tech Troll",
     original: "Tech Meme",
     description:
       "Create hilarious yet meaningful tech memes based on given themes within the time limit.",
@@ -133,12 +133,12 @@ const events = [
     venue: "G01",
     head: "Narayani",
     teamSize: "1-2 Members",
-    formLink: "PASTE_GOOGLE_FORM_LINK_7",
+    formLink: "https://forms.gle/ZU5yVBuFc6tgLqfd7",
     image: meme,
   },
   {
     id: 8,
-    title: "Prompt of the Damned",
+    title: " PromptX Nova",
     original: "AI Prompting",
     description:
       "Craft powerful AI prompts to generate the most accurate and creative outputs within constraints.",
@@ -151,12 +151,12 @@ const events = [
     venue: "A22",
     head: "Belsi Sirina",
     teamSize: "1-2 Members",
-    formLink: "PASTE_GOOGLE_FORM_LINK_8",
+    formLink: "https://forms.gle/TdwdyawKcdMAwQW28",
     image: prompt,
   },
   {
     id: 9,
-    title: "Graveyard Debate",
+    title: "Tech Verdict",
     original: "Debate",
     description:
       "Engage in intense tech debates on futuristic and controversial technology topics.",
@@ -169,7 +169,7 @@ const events = [
     venue: "Main Auditorium",
     head: "Prof. Orion",
     teamSize: "2-3 Members",
-    formLink: "PASTE_GOOGLE_FORM_LINK_9",
+    formLink: "https://forms.gle/SBNedGdMcmDpaCjC6",
     image: debate,
   },
 ];
