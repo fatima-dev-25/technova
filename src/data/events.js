@@ -7,171 +7,204 @@ import hunt from "../assets/Images/hunt.jpg";
 import meme from "../assets/Images/meme.jpg";
 import prompt from "../assets/Images/prompt.jpg";
 import debate from "../assets/Images/debate.jpg";
-import { image } from "framer-motion/client";
+
 const events = [
   {
     id: 1,
-    title: "Nova Spark",
-    original: "Ideathon",
-    description:
-      "A high-intensity idea battle where participants brainstorm innovative solutions to real-world tech problems within a limited time.",
-    guidelines: [
-      "Teams must consist of 2-4 members",
-      "Ideas must be original",
-      "Presentation time is 5 minutes",
-    ],
-    time: "8:15 - 9:15 AM",
-    venue: "G01",
-    head: "Sharini",
-    teamSize: "2-3 Members",
-    formLink:
-      "https://forms.gle/6wknFvxBgSYFfC7a7",
-    image: ideathon,
-  },
-  {
-    id: 2,
-    title: "Nova Nexus",
-    original: "Technical Quiz",
-    description:
-      "A thrilling quiz battle covering programming, AI, cybersecurity, and emerging technologies.",
-    guidelines: [
-      "Individual participation allowed",
-      "No electronic devices permitted",
-      "Multiple elimination rounds",
-    ],
-    time: "9:15 - 9:50 AM",
-    venue: "G01",
-    head: "Austin Djay",
-    teamSize: "2-3 Members",
-    formLink: "https://forms.gle/4sAMbUUZf6vTwF7k6",
-    image: quiz,
-  },
-  {
-    id: 3,
-    title: "Nova ActX",
-    original: "Dumb Charades",
-    description:
-      "Act out technical words and concepts without speaking while your team guesses the correct term.",
-    guidelines: [
-      "No verbal hints allowed",
-      "Time limit per round: 60 seconds",
-      "Judges decision is final",
-    ],
-    time: "10:10 - 11:30 AM",
-    venue: "G01",
-    head: "Venu Aravind",
-    teamSize: "3 Members",
-    formLink: "https://forms.gle/LMUkjqyyn9MwFEF16",
-    image:Dumb,
-  },
-  {
-    id: 4,
     title: "Nova Run",
     original: "Code Relay",
     description:
-      "A relay-style coding challenge where teammates solve parts of a problem sequentially under time pressure.",
+      "A relay-style coding competition where each member solves one question in sequence.",
     guidelines: [
-      "Each member codes one segment",
-      "No external help allowed",
-      "Time-based scoring",
+      "Each team must consist of 3–4 members.",
+      "Only one system will be provided per team.",
+      "Teams must complete questions sequentially.",
+      "Only the active coder can use the keyboard.",
+      "No internet or external devices allowed.",
+      "Only provided IDE and compiler permitted.",
+      "Judging based on correctness and efficiency."
     ],
-    time: "10:10 - 11:30 AM",
+    flow: [
+      {
+        title: "Round 1",
+        details: "First member solves Question 1 within the time limit."
+      },
+      {
+        title: "Round 2",
+        details: "Second member solves Question 2 after Q1 completion."
+      },
+      {
+        title: "Round 3",
+        details: "Third member solves Question 3."
+      },
+      {
+        title: "Round 4",
+        details: "Fourth member solves Question 4."
+      },
+      {
+        title: "Final Submission",
+        details: "All solutions are evaluated and winners are announced."
+      }
+    ],
+    time: "10:10 AM - 11:30 AM",
     venue: "A22 Lab",
     head: "Sharini",
     teamSize: "4 Members",
     formLink: "https://forms.gle/wH3XiwiuDoDR4RPK8",
-    image: code,
+    image: code
   },
+
   {
-    id: 5,
-    title: " Mind the Matrix",
-    original: "Connections",
+    id: 2,
+    title: "Mind the Matrix",
+    original: "Technical Connection",
     description:
-      "Find hidden connections between seemingly unrelated tech clues in this brain-twisting challenge.",
+      "Identify the hidden technical connection between image clues and score points with quick logical thinking.",
     guidelines: [
-      "Teams of 2-3",
-      "No internet access allowed",
-      "Clue sheets will be provided",
+      "Teams of 2–3 members.",
+      "Only one member may answer.",
+      "Each question contains 2–4 image clues.",
+      "Answer cannot be modified once given.",
+      "Incorrect answers pass to other teams.",
+      "1 point per correct answer.",
+      "Judges' decision is final."
+    ],
+    flow: [
+      {
+        title: "Question Display",
+        details: "Image clues are displayed for analysis."
+      },
+      {
+        title: "Discussion",
+        details: "Teams discuss internally within time limit."
+      },
+      {
+        title: "Answer Attempt",
+        details: "One member raises hand to answer."
+      },
+      {
+        title: "Scoring",
+        details: "Correct answers earn 1 point."
+      },
+      {
+        title: "Result",
+        details: "Highest score wins."
+      }
     ],
     time: "11:30 AM - 12:40 PM",
     venue: "G01",
     head: "Narayani",
     teamSize: "2-3 Members",
     formLink: "https://forms.gle/uWgo6XmNKFa5P4tn7",
-    image: conn,
+    image: conn
   },
+
   {
-    id: 6,
-    title: "Byte Blaze",
-    original: "Treasure Hunt",
-    description:
-      "A campus-wide tech-themed treasure hunt filled with puzzles, riddles, and hidden QR codes.",
-    guidelines: [
-      "Follow safety rules",
-      "Solve clues to proceed",
-      "First team to finish wins",
-    ],
-    time: "11:30 AM - 12:40 PM",
-    venue: "A22",
-    head: "Prof. Moon",
-    teamSize: "3-4 Members",
-    formLink: "https://forms.gle/MUqzvbLk74Q8igJP8",
-    image: hunt,
-  },
-  {
-    id: 7,
-    title: " Tech Troll",
+    id: 3,
+    title: "Tech Troll",
     original: "Tech Meme",
     description:
-      "Create hilarious yet meaningful tech memes based on given themes within the time limit.",
+      "Turn technical concepts into creative and relatable memes by blending logic with humor.",
     guidelines: [
-      "Original content only",
-      "No offensive material",
-      "Submit in image format",
+      "Teams of 2–3 members.",
+      "Meme must be original.",
+      "Created during event time.",
+      "Must include caption and technical concept.",
+      "Offensive content leads to disqualification.",
+      "Judges’ decision is final."
+    ],
+    flow: [
+      {
+        title: "Topic Allocation",
+        details: "Each team receives a technical topic."
+      },
+      {
+        title: "Meme Creation",
+        details: "Teams design meme within 30 minutes."
+      },
+      {
+        title: "Presentation",
+        details: "Teams explain concept and humor logic."
+      }
     ],
     time: "1:30 PM - 2:15 PM",
     venue: "G01",
     head: "Narayani",
-    teamSize: "1-2 Members",
+    teamSize: "2-3 Members",
     formLink: "https://forms.gle/ZU5yVBuFc6tgLqfd7",
-    image: meme,
+    image: meme
   },
+
   {
-    id: 8,
-    title: " PromptX Nova",
+    id: 4,
+    title: "PromptX Nova",
     original: "AI Prompting",
     description:
-      "Craft powerful AI prompts to generate the most accurate and creative outputs within constraints.",
+      "Craft powerful AI prompts to generate creative and optimized outputs within constraints.",
     guidelines: [
-      "Use provided AI tools only",
-      "Evaluation based on creativity",
-      "No plagiarized prompts",
+      "Individual or team of two allowed.",
+      "Only provided AI tools permitted.",
+      "No plagiarism allowed.",
+      "Prompt history must be shown.",
+      "Time limits strictly followed.",
+      "Judges’ decision is final."
+    ],
+    flow: [
+      {
+        title: "Round 1",
+        details: "Basic prompting tasks."
+      },
+      {
+        title: "Round 2",
+        details: "Advanced optimization challenge."
+      },
+      {
+        title: "Final Round",
+        details: "Surprise real-time refinement challenge."
+      }
     ],
     time: "1:30 PM - 2:15 PM",
     venue: "A22",
     head: "Belsi Sirina",
     teamSize: "1-2 Members",
     formLink: "https://forms.gle/TdwdyawKcdMAwQW28",
-    image: prompt,
+    image: prompt
   },
+
   {
-    id: 9,
+    id: 5,
     title: "Tech Verdict",
     original: "Debate",
     description:
-      "Engage in intense tech debates on futuristic and controversial technology topics.",
+      "Engage in structured tech debates and defend your stance with logic and confidence.",
     guidelines: [
-      "Each speaker gets 3 minutes",
-      "Respect opposing views",
-      "Topic revealed 30 mins before start",
+      "Strictly follow time limits.",
+      "Only registered members may speak.",
+      "No offensive language.",
+      "Arguments must be relevant.",
+      "Judges’ decision is final."
+    ],
+    flow: [
+      {
+        title: "Preliminary Round",
+        details: "All teams present arguments."
+      },
+      {
+        title: "Final Round",
+        details: "Top teams compete with rebuttals."
+      },
+      {
+        title: "Result",
+        details: "Winner and Runner-up declared."
+      }
     ],
     time: "2:15 PM - 3:00 PM",
     venue: "Main Auditorium",
     head: "Prof. Orion",
     teamSize: "2-3 Members",
     formLink: "https://forms.gle/SBNedGdMcmDpaCjC6",
-    image: debate,
-  },
+    image: debate
+  }
 ];
 
 export default events;
