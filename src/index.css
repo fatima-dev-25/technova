@@ -178,39 +178,44 @@ a {
   top: 0;
   left: 0;
   z-index: 1000;
-
-  display: flex;
-  align-items: center;
-
   /* Glass effect */
   background: rgba(12, 17, 29, 0.75);
   backdrop-filter: blur(12px);
-
+  display: flex;
+  align-items: center;
   /* Neon border */
   box-shadow: 0 0 25px #0a1725;
 }
 
 /* ===== INNER CONTAINER ===== */
 .navbar-container {
-  width: 100%;
   display: flex;
   align-items: center;
-  padding: 0;   /* same as px-12 */
+  padding: 0; 
+  justify-content: space-between;
+  width: 99%; /* same as px-12 */
 }
-
-/* ===== LOGO ===== */
 .logo {
-  font-size: 40px;
-  padding: 20px;
-  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 9px; 
+  font-size: 25px;  /* space between image and text */
+}
+/* ===== LOGO ===== */
+.logo img {
+  height: 30px;   /* adjust size */
+  width: auto;
+  cursor: pointer;
+  border-radius: 100px;
+  margin-left: 20px;
 }
 
 /* ===== LINKS ===== */
 .nav-links {
   margin-left: auto;    /* pushes links to right */
   display: flex;
-  gap: 12px;           /* same as gap-32 */
-  font-size: 21px;
+  gap: 30px;           /* same as gap-32 */
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -228,6 +233,10 @@ a {
               0 0 2px #152639;
   border-radius: 4px;
 }
+.logo {
+  height: 50px;
+  width: auto;
+}
 @media (max-width: 640px) {
   .navbar {
     height: auto; /* allow height to grow */
@@ -236,27 +245,39 @@ a {
   }
 
   .navbar-container {
-    flex-direction: column; /* stack vertically */
-    align-items: flex-start;
-    gap: 20px;
-  }
+    flex-direction: row; /* stack vertically */
+    align-items:center;
+    justify-content: space-between;
+    width: 100%;
+    
 
+  }
+  .logo img {
+  height: 20px;   /* adjust size */
+  width: auto;
+  cursor: pointer;
+  border-radius: 100px;
+  margin-left: 20px;
+}
   .logo {
-    font-size: 28px; /* smaller logo */
+    font-size: 16px; /* smaller logo */
     padding: 0;
+    margin-left: -20px;
+    margin-right: 60px;
   }
 
   .nav-links {
-    margin-left: -5px;
-    flex-direction: column; /* vertical links */
+    flex-direction: row; /* vertical links */
     width: 100%;
-    gap: 40px;
-    flex-direction: row;
+    gap: 5px;
+  
+
   }
 
   .nav-links a {
-    font-size: 18px;
+    font-size: 11px;
     padding: 6px 10px;
+    margin-left: -10px;
   }
 }
 @media (max-width: 640px) {
@@ -544,7 +565,7 @@ a {
   position: absolute;
   bottom: 30px;
   right: -20px;
-
+  text-align: center;
   font-size: 24px;
   font-weight: bold;
   color: rgb(181, 201, 215);
@@ -569,10 +590,8 @@ a {
   }
   .event-date {
     font-size: 20px;
-    bottom: 70px;
-    right: 15px;
-    text-align:left;
-    margin-right: -40px;
+    bottom: 60px;
+    text-align:center;
     overflow: hidden;              /* hides extra text */
   white-space: nowrap;           /* keeps text in one line */
   border-right: 2px solid rgb(181, 201, 215); /* cursor effect */
@@ -583,7 +602,7 @@ a {
 }
 /* Typing animation */
 @keyframes typing {
-  from { width: 0; }
+  from { width: 100%; }
   to { width: 100%; }
 }
 

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "../index.css";
+import licet from "../assets/Images/licet.jpg";
 
 function Navbar() {
   return (
@@ -7,9 +8,10 @@ function Navbar() {
       <div className="navbar-container">
 
         {/* Logo */}
-        <h1 className="logo">
-          TECHNOVA
-        </h1>
+        <div className="logo">
+          <img src={licet} alt="Licet Logo" />
+          <span className="logo-text">LICET</span>
+        </div>
 
         {/* Links */}
         <div className="nav-links">

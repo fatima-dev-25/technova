@@ -37,7 +37,7 @@ function Contact() {
               <div className="contact-section">
                 <h4>FOR QUERIES CONTACT</h4>
                 <p>👤 Fatima Theresa A - 7598684886</p>
-                <p>👤 Narayani </p>
+                <p>👤 Narayani - 8610633270</p>
               </div>
 
               
