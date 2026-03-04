@@ -11,7 +11,7 @@ import debate from "../assets/Images/debate.jpg";
 const events = [
   {
     id: 1,
-    title: "Nova Spark \u00A0- \u00A0Ideathon",
+    title: "Nova Spark\u00A0 - \u00A0Ideathon",
     original: "Ideathon",
     description:
       "Present innovative solutions to real-world problems and compete with the best ideas.",
@@ -44,7 +44,7 @@ const events = [
   ],
     time: "8:15 - 9:15 AM",
     venue: "G01",
-    head: "Sharini",
+    head: "sharini.28it@licet.ac.in",
     teamSize: "4 Members",
     formLink: "https://forms.gle/6wknFvxBgSYFfC7a7",
     image: ideathon
@@ -88,7 +88,7 @@ const events = [
   ],
     time: "9:15 - 9:50 AM",
     venue: "G01",
-    head: "Austin Djay",
+    head: "austindijai.28it@licet.ac.in",
     teamSize: "2-3 Members",
     formLink: "https://forms.gle/4sAMbUUZf6vTwF7k6",
     image: quiz
@@ -127,7 +127,7 @@ const events = [
   ],
     time: "10:10 am- 11:30 am",
     venue: "G01",
-    head: "Venu Aravind",
+    head: "venuaravind.28it@licet.ac.in",
     teamSize: "3 Members",
     formLink: "https://forms.gle/LMUkjqyyn9MwFEF16",
     image: Dumb
@@ -154,7 +154,7 @@ const events = [
     ],
     time: "10:10 - 11:30 AM",
     venue: "A22 Lab",
-    head: "Sharini",
+    head: "sharini.28it@licet.ac.in",
     teamSize: "4 Members",
     formLink: "https://forms.gle/wH3XiwiuDoDR4RPK8",
     image: code
@@ -181,7 +181,7 @@ const events = [
     ],
     time: "11:30 - 12:40 PM",
     venue: "G01",
-    head: "Narayani",
+    head: "narayani.28it@licet.ac.in",
     teamSize: "2-3 Members",
     formLink: "https://forms.gle/uWgo6XmNKFa5P4tn7",
     image: conn
@@ -220,7 +220,7 @@ const events = [
   ],
     time: "11:30 - 12:40 PM",
     venue: "A22",
-    head: "Fatima Theresa-",
+    head: "fatimatheresa.27it@licet.ac.in",
     teamSize: "3-4 Members",
     formLink: "https://forms.gle/MUqzvbLk74Q8igJP8",
     image: hunt
@@ -228,7 +228,7 @@ const events = [
 
   {
     id: 7,
-    title: "Tech Troll\u00A0 - \u00A0Memes",
+    title: "Tech Troll\u00A0 - \u00A0 Tech Meme",
     original: "Tech Meme",
     description:
       "Turn technical concepts into creative, relatable memes by blending logic with humor.",
@@ -245,7 +245,7 @@ const events = [
     ],
     time: "1:30 - 2:15 PM",
     venue: "G01",
-    head: "Narayani",
+    head: "narayani.28it@licet.ac.in",
     teamSize: "2-3 Members",
     formLink: "https://forms.gle/ZU5yVBuFc6tgLqfd7",
     image: meme
@@ -271,7 +271,7 @@ const events = [
     ],
     time: "1:30 - 2:15 PM",
     venue: "A22",
-    head: "Belsi Sirina",
+    head: "belsisirina.27it@licet.ac.in",
     teamSize: "1-2 Members",
     formLink: "https://forms.gle/TdwdyawKcdMAwQW28",
     image: prompt
@@ -296,7 +296,7 @@ const events = [
     ],
     time: "2:15 - 3:00 PM",
     venue: "Main Auditorium",
-    head: "Prof. Orion",
+    head: "praicyprecilla.27it@licet.ac.in",
     teamSize: "2-3 Members",
     formLink: "https://forms.gle/SBNedGdMcmDpaCjC6",
     image: debate

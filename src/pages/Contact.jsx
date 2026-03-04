@@ -9,7 +9,7 @@ function Contact() {
         {/* Title Section */}
         <h1 className="contact-title">CONTACT US</h1>
         <p className="contact-subtitle">
-          Get in touch with us for any questions about Flair 2K25. We're here to help!
+          Get in touch with us for any questions about TechNova. We're here to help!
         </p>
 
         {/* Contact Cards Row */}
@@ -36,8 +36,8 @@ function Contact() {
 
               <div className="contact-section">
                 <h4>FOR QUERIES CONTACT</h4>
-                <p>👤 -------------------</p>
-                <p>👤 --------------------</p>
+                <p>👤 Fatima Theresa A - 7598684886</p>
+                <p>👤 Narayani </p>
               </div>
 
               

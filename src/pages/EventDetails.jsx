@@ -49,7 +49,7 @@ function EventDetails() {
 <div className="info-row">
 
   <div className="info-box">
-    <h2>Guidelines</h2>
+    <h2 >Guidelines</h2>
     <ul>
       {event.guidelines.map((g, i) => (
         <li key={i}>{g}</li>

@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
   color: rgb(181, 201, 215);
-  background: radial-gradient(ellipse at bottom, #080b12 0%, #0a0d16 60%, #000000 100%);
+  background: radial-gradient(ellipse at bottom, #080b12 0%, #070a11 60%, #000000 100%);
   overflow-x: hidden;
 }
 
@@ -96,8 +96,17 @@ a {
   cursor: pointer;
   transition: all 0.3s ease;
   justify-content: center;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: cardReveal 0.9s ease-out forwards;
 }
 
+@keyframes cardReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* Hover effect */
 .event-card:hover {
   border-color: #091b30;
@@ -223,6 +232,7 @@ a {
   .navbar {
     height: auto; /* allow height to grow */
     padding: 10px 20px;
+    
   }
 
   .navbar-container {
@@ -240,7 +250,7 @@ a {
     margin-left: -5px;
     flex-direction: column; /* vertical links */
     width: 100%;
-    gap: 5px;
+    gap: 40px;
     flex-direction: row;
   }
 
@@ -327,6 +337,7 @@ a {
   font-size: 45px;
   margin-bottom: 25px;
   font-weight: bold;
+  margin-left: -30px;
 }
 .top-section {
   display: flex;
@@ -348,6 +359,7 @@ a {
   .register-button {
     font-size: 10px;
     padding: 8px 14px;
+    margin-left: -35px;
   }
 }
 .info-box {
@@ -355,9 +367,9 @@ a {
   margin-top: 30px;
   padding: 20px;
   border-radius: 15px;
-  background: rgba(253, 253, 253, 0.021);
+  background: rgba(253, 253, 253, 0.034);
   backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.041);
+  border: 1px solid rgba(255, 255, 255, 0.103);
   min-width: 100px;
 }
 @media (max-width: 640px) {
@@ -380,6 +392,7 @@ a {
   gap: 30px;
   margin-top: 30px;
   flex-wrap: wrap;
+  
 }
 .info-box ul {
   padding-left: 20px; 
@@ -512,34 +525,71 @@ a {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  opacity: 0;                 /* Start invisible */
+  animation: fadeIn 8s ease-in forwards; /* Slow appear */
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Bottom Right Text */
 .event-date {
   position: absolute;
   bottom: 30px;
-  right: 40px;
+  right: -20px;
 
   font-size: 24px;
   font-weight: bold;
   color: rgb(181, 201, 215);
+  white-space: nowrap;           /* keeps text in one line */
+  border-right: 2px solid rgb(181, 201, 215); /* cursor effect */
+  width: 0;                      /* start hidden */
+  animation: typing 12s steps(30, end) forwards,
+             blink 1s infinite;
 
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
 }
 @media (max-width: 640px) {
   .home-container {
-    height: 100vh;
-    width:100vw;  /* reduce height for small screens */
+    min-height: 100vh;
+    width:100%;  /* reduce height for small screens */
     justify-content: center;
     align-items: center;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     background-attachment: scroll; /* avoids mobile parallax glitches */
   }
   .event-date {
-    font-size: 18px;
-    bottom: 15px;
+    font-size: 20px;
+    bottom: 70px;
     right: 15px;
-    text-align: center;
+    text-align:left;
+    margin-right: -40px;
+    overflow: hidden;              /* hides extra text */
+  white-space: nowrap;           /* keeps text in one line */
+  border-right: 2px solid rgb(181, 201, 215); /* cursor effect */
+  width: 0;                      /* start hidden */
+  animation: typing 5s steps(30, end) forwards,
+             blink 1s infinite;
   }
+}
+/* Typing animation */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Cursor blink */
+@keyframes blink {
+  50% { border-color: transparent; }
 }
 .contact-wrapper {
   padding: 120px 20px 60px;
@@ -551,7 +601,17 @@ a {
   color: rgb(181, 201, 215);
   margin-bottom: 10px;
 }
+.contact-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
 
+.contact-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.contact-card:nth-child(3) {
+  animation-delay: 0.6s;
+}
 .contact-subtitle {
   color: rgb(181, 201, 215);
   margin-bottom: 50px;
@@ -571,6 +631,11 @@ a {
   backdrop-filter: blur(12px);
   border: 1px solid rgba(19, 26, 41, 0.75);
   box-shadow: 0 0 20px rgba(19, 26, 41, 0.75);
+}
+.contact-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(19, 26, 41, 0.75);
 }
 .card-heading {
   color: rgb(181, 201, 215);
