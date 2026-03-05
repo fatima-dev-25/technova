@@ -186,37 +186,81 @@ a {
   /* Neon border */
   box-shadow: 0 0 25px #0a1725;
 }
-
+.nav-center{
+  display:flex;
+  align-items:center;
+  gap:40px;
+}
 /* ===== INNER CONTAINER ===== */
-.navbar-container {
-  display: flex;
-  align-items: center;
-  padding: 0; 
-  justify-content: space-between;
-  width: 99%; /* same as px-12 */
+.navbar-container{
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
 }
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 9px; 
-  font-size: 25px;  /* space between image and text */
-}
-/* ===== LOGO ===== */
-.logo img {
-  height: 30px;   /* adjust size */
-  width: auto;
-  cursor: pointer;
-  border-radius: 100px;
-  margin-left: 20px;
+.logo{
+  display:flex;
+  align-items:center;
+  gap:8px;
 }
 
+.logo img{
+  height:30px;
+  border-radius:50%;
+}
+.logo-section{
+  position:absolute;
+  bottom:110px;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  gap:60px;
+}
+
+.logo-box{
+  text-align:center;
+  color:rgb(181, 201, 215);
+}
+
+.logo-box img{
+  width:80px;
+  height:auto;
+  margin-bottom:8px;
+  filter: brightness(1) invert(1);
+}
+
+.logo-box p{
+  font-size:14px;
+  letter-spacing:1px;
+}
+
+.event-date{
+  position:absolute;
+  bottom:60px;
+  width:100%;
+  text-align:center;
+  color:rgb(181, 201, 215);
+  font-size:18px;
+}
+.right-logos{
+  position:absolute;
+  right:30px;
+  display:flex;
+  gap:15px;
+}
+
+.right-logos img{
+  height:32px;
+  width:auto;
+  filter: brightness(1) invert(1); /* makes logo white */
+}
 /* ===== LINKS ===== */
-.nav-links {
-  margin-left: auto;    /* pushes links to right */
-  display: flex;
-  gap: 30px;           /* same as gap-32 */
-  font-size: 18px;
-  font-weight: bold;
+.nav-links{
+  display:flex;
+  gap:30px;
+  font-size:18px;
+  font-weight:bold;
 }
 
 .nav-links a {
@@ -237,48 +281,38 @@ a {
   height: 50px;
   width: auto;
 }
-@media (max-width: 640px) {
-  .navbar {
-    height: auto; /* allow height to grow */
-    padding: 10px 20px;
-    
-  }
+@media (max-width:640px){
 
-  .navbar-container {
-    flex-direction: row; /* stack vertically */
-    align-items:center;
-    justify-content: space-between;
-    width: 100%;
-    
-
-  }
-  .logo img {
-  height: 20px;   /* adjust size */
-  width: auto;
-  cursor: pointer;
-  border-radius: 100px;
-  margin-left: 20px;
+.nav-center{
+  gap:10px;
 }
-  .logo {
-    font-size: 16px; /* smaller logo */
-    padding: 0;
-    margin-left: -20px;
-    margin-right: 60px;
-  }
 
-  .nav-links {
-    flex-direction: row; /* vertical links */
-    width: 100%;
-    gap: 5px;
-  
+.logo-text{
+  display:none; /* hide LICET text on small screens */
+}
 
-  }
+.nav-links{
+  gap:10px;
+  font-size:12px;
+}
 
-  .nav-links a {
-    font-size: 11px;
-    padding: 6px 10px;
-    margin-left: -10px;
-  }
+.right-logos{
+  right:10px;
+}
+
+.right-logos img{
+  height:20px;
+}
+
+}
+.right-logos img{
+  opacity:0.85;
+  transition:0.3s;
+}
+
+.right-logos img:hover{
+  opacity:1;
+  transform:scale(1.05);
 }
 @media (max-width: 640px) {
   .event-card {
