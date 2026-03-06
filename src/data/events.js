@@ -45,8 +45,7 @@ const events = [
   ],
     time: "8:15 - 9:15 AM",
     venue: "G01",
-    in:"....",
-    head: "Sharini",
+    head: "Sharini - II year",
     teamSize: "4 Members",
     formLink: "https://forms.gle/6wknFvxBgSYFfC7a7",
     image: ideathon
@@ -91,8 +90,7 @@ const events = [
   ],
     time: "9:15 - 9:50 AM",
     venue: "G01",
-    in:"...",
-    head: "Austin Dijai",
+    head: "Austin Dijai - II year",
     teamSize: "2-3 Members",
     formLink: "https://forms.gle/4sAMbUUZf6vTwF7k6",
     image: quiz
@@ -102,7 +100,7 @@ const events = [
     id: 3,
     heading:"Nova ActX",
     title: "Nova ActX\u00A0 - \u00A0Dumb Charades",
-    original: "Dumb Charades",
+    original: "Dumb Charades - II year",
     description:
       "Act it out without words and let your team guess the technical term in this fun-filled challenge",
     guidelines: [
@@ -132,8 +130,7 @@ const events = [
   ],
     time: "10:10 am- 11:30 am",
     venue: "G01",
-    in:"..",
-    head: "Venu Aravind",
+    head: "Venu Aravind - II year",
     teamSize: "3 Members",
     formLink: "https://forms.gle/LMUkjqyyn9MwFEF16",
     image: Dumb
@@ -161,8 +158,7 @@ const events = [
     ],
     time: "10:10 - 11:30 AM",
     venue: "A22 Lab",
-    in:"..",
-    head: "Sharini",
+    head: "Sharini - II year",
     teamSize: "4 Members",
     formLink: "https://forms.gle/wH3XiwiuDoDR4RPK8",
     image: code
@@ -190,8 +186,7 @@ const events = [
     ],
     time: "11:30 - 12:40 PM",
     venue: "G01",
-    in:"..",
-    head: "Narayani",
+    head: "Narayani - II year",
     teamSize: "2-3 Members",
     formLink: "https://forms.gle/uWgo6XmNKFa5P4tn7",
     image: conn
@@ -231,8 +226,7 @@ const events = [
   ],
     time: "11:30 - 12:40 PM",
     venue: "A22",
-    in:"..",
-    head: "Fatima Theresa",
+    head: "Fatima Theresa - III year",
     teamSize: "3-4 Members",
     formLink: "https://forms.gle/MUqzvbLk74Q8igJP8",
     image: hunt
@@ -258,7 +252,7 @@ const events = [
     ],
     time: "1:30 - 2:15 PM",
     venue: "G01",
-    head: "narayani.28it@licet.ac.in",
+    head: "Narayani - II year",
     teamSize: "2-3 Members",
     formLink: "https://forms.gle/ZU5yVBuFc6tgLqfd7",
     image: meme
@@ -285,8 +279,7 @@ const events = [
     ],
     time: "1:30 - 2:15 PM",
     venue: "A22",
-    in:"..",
-    head: "Belsi Sirina",
+    head: "Belsi Sirina - III year",
     teamSize: "1-2 Members",
     formLink: "https://forms.gle/TdwdyawKcdMAwQW28",
     image: prompt
@@ -312,7 +305,7 @@ const events = [
     ],
     time: "2:15 - 3:00 PM",
     venue: "Main Auditorium",
-    head: "Praicy Precilla",
+    head: "Praicy Precilla - III year",
     teamSize: "2-3 Members",
     formLink: "https://forms.gle/SBNedGdMcmDpaCjC6",
     image: debate

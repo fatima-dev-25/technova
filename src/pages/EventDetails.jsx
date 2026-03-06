@@ -78,13 +78,9 @@ function EventDetails() {
     <p><strong>Venue : </strong>
     {event.venue}</p>
   </div>
-  <div className="bottom-box">
-    <p><strong>Event Incharge : </strong>
-    {event.in}</p>
-  </div>
 
   <div className="bottom-box">
-    <p><strong>Event Head : </strong>
+    <p><strong>Event Incharge : </strong>
     {event.head}</p>
   </div>
 </div>

@@ -10,23 +10,23 @@ function Home() {
 
   return (
     <PageWrapper>
-      
-      <div
-        className="home-container"
-        style={{ backgroundImage: `url(${bgImage})`,
-      backgroundSize: "95%", }}
-      >
-    
-        <StarField />
+      <StarField />
         <ParticleBackground />
         <div className="hero-conten">
       <p className="organizer-tex">
             <strong>Department of Information Technology</strong>
           </p>
           <p className="organizer-text">
-            <strong>Association with CSI organizes</strong>
+            <strong>In association with CSI organizes</strong>
           </p>
           </div>
+      <div
+        className="home-container"
+        style={{ backgroundImage: `url(${bgImage})`,
+      backgroundSize: "95%", }}
+      >
+    
+        
         {/* CENTER CONTENT */}
         <div className="hero-content">
 
@@ -43,8 +43,8 @@ function Home() {
           
         </div>
 
-        <div className="event-date">
-          Be There. 17th March 2026.
+        <div className="event-date" >
+        Be There. 17th March 2026.
         </div>
       </div>
     </PageWrapper>
