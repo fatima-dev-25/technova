@@ -39,12 +39,13 @@ function Home() {
           >
             Join Us
           </button>
+          <p className="event-date" >
+        Be There. 17th March 2026.
+        </p>
           
         </div>
 
-        <div className="event-date" >
-        Be There. 17th March 2026.
-        </div>
+        
       </div>
     </PageWrapper>
   );

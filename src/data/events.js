@@ -30,7 +30,7 @@ const events = [
     {
       title: "Round 1 – Idea Submission",
       details:
-        "Teams submit their problem statement and core idea related to the given theme."
+        "Teams submit their idea related to the given problem statement."
     },
     {
       title: "Round 2 – Presentation",

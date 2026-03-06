@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "../index.css";
 import licet from "../assets/Images/licet.jpg";
-import logo1 from "../assets/Images/eventlogo.png";
+import logo1 from "../assets/Images/eventlogo.jpg";
 import logo2 from "../assets/Images/partnerlogo.png";
 
 function Navbar() {
@@ -11,7 +11,7 @@ function Navbar() {
 
         {/* LEFT LOGO */}
         <div className="logo">
-          <img src={licet} alt="Licet Logo"style={{ height: "45px", width: "auto" }} />
+          <img src={licet} alt="Licet Logo"  />
           <span className="logo-text">LICET</span>
         </div>
 
@@ -24,8 +24,8 @@ function Navbar() {
 
         {/* RIGHT LOGOS */}
         <div className="right-logos">
-          <img src={logo1} alt="Event Logo" style={{ height: "45px", width: "auto" }} />
-          <img src={logo2} alt="Partner Logo" style={{ height: "75px", width: "auto", filter: "brightness(2) invert(0.4)"}} />
+          <img src={logo1} alt="Event Logo" style={{ height: "45px", width: "45px" }} />
+          <img src={logo2} alt="Partner Logo" style={{ height: "100px", width: "auto"}} />
         </div>
 
       </div>
