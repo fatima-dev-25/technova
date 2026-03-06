@@ -11,7 +11,7 @@ function Navbar() {
 
         {/* LEFT LOGO */}
         <div className="logo">
-          <img src={licet} alt="Licet Logo" />
+          <img src={licet} alt="Licet Logo"style={{ height: "45px", width: "auto" }} />
           <span className="logo-text">LICET</span>
         </div>
 
@@ -24,8 +24,8 @@ function Navbar() {
 
         {/* RIGHT LOGOS */}
         <div className="right-logos">
-          <img src={logo1} alt="Event Logo" style={{ height: "35px", width: "auto" }} />
-          <img src={logo2} alt="Partner Logo" style={{ height: "65px", width: "auto" }} />
+          <img src={logo1} alt="Event Logo" style={{ height: "45px", width: "auto" }} />
+          <img src={logo2} alt="Partner Logo" style={{ height: "75px", width: "auto", filter: "brightness(2) invert(0.4)"}} />
         </div>
 
       </div>

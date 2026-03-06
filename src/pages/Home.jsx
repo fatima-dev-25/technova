@@ -12,7 +12,12 @@ function Home() {
     <PageWrapper>
       <StarField />
         <ParticleBackground />
-        <div className="hero-conten">
+      <div
+        className="home-container"
+        style={{ backgroundImage: `url(${bgImage})`,
+      backgroundSize: "95%", }}
+      >
+    <div className="hero-conten">
       <p className="organizer-tex">
             <strong>Department of Information Technology</strong>
           </p>
@@ -20,18 +25,12 @@ function Home() {
             <strong>In association with CSI organizes</strong>
           </p>
           </div>
-      <div
-        className="home-container"
-        style={{ backgroundImage: `url(${bgImage})`,
-      backgroundSize: "95%", }}
-      >
-    
         
         {/* CENTER CONTENT */}
         <div className="hero-content">
 
           <p className="hero-tagline">
-            <strong>Igniting innovation through technology, talent, and teamwork</strong>
+            <strong>Igniting innovation through technology and talent</strong>
           </p>
 
           <button
