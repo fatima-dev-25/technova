@@ -27,8 +27,9 @@ function EventCard({ event, index }) {
             className="event-button"
             onClick={() => navigate(`/event/${event.id}`)}
           >
-            Register Now
+            Explore
           </button>
+          
         </div>
       </div>
     </div>
