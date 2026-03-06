@@ -11,6 +11,7 @@ import debate from "../assets/Images/debate.jpg";
 const events = [
   {
     id: 1,
+    heading:"Nova Spark",
     title: "Nova Spark\u00A0 - \u00A0Ideathon",
     original: "Ideathon",
     description:
@@ -52,6 +53,7 @@ const events = [
 
   {
     id: 2,
+    heading:"Nova Nexus",
     title: "Nova Nexus\u00A0 - \u00A0Technical Quiz",
     original: "Technical Quiz",
     description:
@@ -96,6 +98,7 @@ const events = [
 
   {
     id: 3,
+    heading:"Nova ActX",
     title: "Nova ActX\u00A0 - \u00A0Dumb Charades",
     original: "Dumb Charades",
     description:
@@ -135,6 +138,7 @@ const events = [
 
   {
     id: 4,
+    heading:"Nova Run",
     title: "Nova Run\u00A0 - \u00A0Code Relay",
     original: "Code Relay",
     description:
@@ -162,10 +166,11 @@ const events = [
 
   {
     id: 5,
+    heading:"Mind the Matrix",
     title: "Mind the Matrix\u00A0 - \u00A0Connections",
     original: "Connections",
     description:
-      "Identify the hidden technical connection between image clues and score points with quick logical thinking.",
+      "Identify the hidden technical connection between images and score points with logical thinking.",
     guidelines: [
       "Teams of 2–3 members.",
       "One member raises hand to answer.",
@@ -189,6 +194,7 @@ const events = [
 
   {
     id: 6,
+    heading:"Byte Blaze",
     title: "Byte Blaze\u00A0 - \u00A0Treasure Hunt",
     original: "Treasure Hunt",
     description:
@@ -228,6 +234,7 @@ const events = [
 
   {
     id: 7,
+    heading:"Tech Troll",
     title: "Tech Troll\u00A0 - \u00A0 Tech Meme",
     original: "Tech Meme",
     description:
@@ -253,6 +260,7 @@ const events = [
 
   {
     id: 8,
+    heading:"PromptX Nova",
     title: "PromptX Nova\u00A0 - \u00A0AI Prompting",
     original: "AI Prompting",
     description:
@@ -279,6 +287,7 @@ const events = [
 
   {
     id: 9,
+    heading:"Tech Verdict",
     title: "Tech Verdict\u00A0 - \u00A0Debate",
     original: "Debate",
     description:

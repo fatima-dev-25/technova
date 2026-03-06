@@ -1,38 +1,44 @@
+import { useNavigate } from "react-router-dom";
 import ParticleBackground from "../components/ParticleBackground";
 import StarField from "../components/StarField";
 import PageWrapper from "../components/PageWrapper";
 import bgImage from "../assets/Images/tech.jpg";
-import eventLogo from "../assets/Images/eventlogo.png";
-import partnerLogo from "../assets/Images/partnerlogo.png";
 import "../index.css";
 
 function Home() {
+  const navigate = useNavigate();
+
   return (
     <PageWrapper>
       <div
         className="home-container"
-        style={{ backgroundImage: `url(${bgImage})` }}
+        style={{ backgroundImage: `url(${bgImage})`,
+      backgroundSize: "95%", }}
       >
         <StarField />
         <ParticleBackground />
 
-        {/* Logos */}
-        <div className="logo-section">
-          <div className="logo-box">
-            <img src={eventLogo} alt="Event Logo" />
-            <p>TECHNOVA</p>
-          </div>
+        {/* CENTER CONTENT */}
+        <div className="hero-content">
 
-          <div className="logo-box">
-            <img src={partnerLogo} alt="Partner Logo" />
-            <p>Organized by LICET IT</p>
-          </div>
+          <p className="hero-tagline">
+            <strong>Igniting innovation through technology, talent, and teamwork.</strong>
+          </p>
+
+          <button
+            className="join-button"
+            onClick={() => navigate("/events")}
+          >
+            Join Us
+          </button>
+          <p className="organizer-text">
+            <strong>Organized by the Department of Information Technology in association with CSI.</strong>
+          </p>
         </div>
 
         <div className="event-date">
           Be There. 17th March 2026.
         </div>
-
       </div>
     </PageWrapper>
   );

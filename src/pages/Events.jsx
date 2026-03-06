@@ -9,7 +9,7 @@ function Events() {
     <div className="w-full max-w-5xl space-y-32">
 
       <br /><br /><br /><br />
-      <div className="flex flex-col gap-32">
+      <div className="events-grid">
         {events.map((event, index) => (
           <EventCard key={event.id} event={event} index={index} />
         ))}

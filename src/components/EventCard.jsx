@@ -19,7 +19,7 @@ function EventCard({ event, index }) {
             EVENT {(index + 1).toString().padStart(2, "0")} 
           </p>
 
-          <h2 className="event-title">{event.title}</h2>
+          <h2 className="event-title">{event.heading}</h2>
 
           <p className="event-description">{event.description}</p>
 
