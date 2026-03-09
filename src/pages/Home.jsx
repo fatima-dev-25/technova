@@ -13,7 +13,7 @@ function Home() {
       <StarField />
         <ParticleBackground />
       <div
-        className="home-container"
+        className="home-container"   
         style={{ backgroundImage: `url(${bgImage})`,
       backgroundSize: "95%", }}
       >

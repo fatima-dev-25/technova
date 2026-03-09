@@ -172,7 +172,7 @@ const events = [
     description:
       "Identify the hidden technical connection between images and score points with logical thinking.",
     guidelines: [
-      "Teams of 2–3 members.",
+      "Teams of 3-4 members.",
       "One member raises hand to answer.",
       "Each question has 2–4 image clues.",
       "Incorrect answers pass to other teams.",

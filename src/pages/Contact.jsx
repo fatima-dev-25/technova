@@ -4,6 +4,7 @@ import "../index.css";
 function Contact() {
   return (
     <PageWrapper>
+       
       <div className="contact-wrapper">
 
         {/* Title Section */}

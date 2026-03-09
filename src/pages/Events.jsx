@@ -5,9 +5,15 @@ import PageWrapper from "../components/PageWrapper";
 function Events() {
   return (
    <PageWrapper>
+   
   <div className="min-h-screen flex justify-center items-start py-24 px-8">
     <div className="w-full max-w-5xl space-y-32">
-
+      <div className="hero-conte">
+      <p className="organizer-te">
+            <strong>Department of Information Technology</strong>
+          </p>
+          </div> 
+      
       <br /><br /><br /><br />
       <div className="events-grid">
         {events.map((event, index) => (

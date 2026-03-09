@@ -366,9 +366,20 @@ a {
   opacity: 0;   /* start hidden */
   animation: fadeIn 5s ease forwards;
 }
+.hero-conte {
+  position: absolute;        /* NOT fixed */
+  top: 20%;                  /* perfect visual center */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+  width: 90%;
+  opacity: 0;   /* start hidden */
+  animation: fadeIn 7s ease forwards;
+}
 .hero-content {
   position: absolute;        /* NOT fixed */
-  top: 75%;                  /* perfect visual center */
+  top: 78%;                  /* perfect visual center */
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -379,7 +390,7 @@ a {
 }
 /* Tagline */
 .hero-tagline {
-  font-size: 20px;
+  font-size: 30px;
   margin-bottom: 25px;
   letter-spacing: 1px;
 }
@@ -394,13 +405,17 @@ a {
   color: rgb(181, 201, 215);
   cursor: pointer;
   transition: 0.3s ease;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .join-button:hover {
   background-color: #03070a;
   transform: scale(1.05);
   box-shadow: 0 0 20px #0d1e31;
+}
+.organizer-te {
+  font-size: 20px;
+  opacity: 0.85;
 }
 .organizer-tex {
   font-size: 25px;
@@ -417,7 +432,7 @@ a {
   position: relative;
   width: 100%;         /* smaller width */
   max-width: 550px;
-  height: 400px;        /* smaller height */
+  height: 380px;        /* smaller height */
   border-radius: 20px;
   overflow: hidden;
   background-size: cover;
@@ -541,6 +556,10 @@ a {
     width:95%;
   
   }
+  .hero-conte{
+  display: none;
+}
+
 
   .hero-tagline{
     font-size:12px;
@@ -758,7 +777,7 @@ a {
   .info-row{
     flex-direction: column;
     gap:20px;
-    margin-right: -10px666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666                                                                                                                                                ;
+    margin-right: 31px;                                                                                                                                              ;
   }
 
   .info-box ul{
