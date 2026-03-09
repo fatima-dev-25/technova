@@ -414,7 +414,7 @@ a {
   box-shadow: 0 0 20px #0d1e31;
 }
 .organizer-te {
-  font-size: 20px;
+  font-size: 23px;
   opacity: 0.85;
 }
 .organizer-tex {
@@ -736,6 +736,7 @@ a {
 .info-box ul {
   padding-left: 20px; 
   font-size: 40px;
+  padding-top: -40px;
   /* proper bullet spacing */
 }
 
@@ -747,6 +748,7 @@ a {
 }
 .flow-item {
   margin-bottom: 15px;
+  margin-top: 28px;
 }
 
 .flow-item p {
@@ -888,7 +890,7 @@ a {
   padding: 120px 20px 60px;
   text-align: center;
   color: rgb(181, 201, 215);
-  margin-top: 10px;
+  margin-top: -10px;
   margin-right: 49px;
 }
 .contact-title {

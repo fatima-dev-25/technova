@@ -18,10 +18,8 @@ const events = [
       "Present innovative solutions to real-world problems and compete with the best ideas.",
      guidelines: [
     "Each team must consist of 2–4 members.",
-    "A participant can be part of only one team.",
     "Ideas must align with the given theme",
     "Solutions should be innovative, feasible, and impactful.",
-    "Pre-registration is mandatory (on-spot allowed if slots available).",
     "Each team gets 5 minutes for presentation and 2–3 minutes for Q&A.",
     "Plagiarism is strictly prohibited.",
     "Judges’ decision will be final."
@@ -81,11 +79,6 @@ const events = [
       title: "Round 3 – Rapid Fire / Buzzer Round",
       details:
         "Fast-paced questions where teams must answer quickly to gain points."
-    },
-    {
-      title: "Final Evaluation",
-      details:
-        "The team with the highest total points will be declared the winner and runner-up."
     }
   ],
     time: "9:15 - 9:50 AM",
