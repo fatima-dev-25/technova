@@ -17,7 +17,7 @@ const events = [
     description:
       "Present innovative solutions to real-world problems and compete with the best ideas.",
      guidelines: [
-    "Each team must consist of 2–4 members.",
+    "Each team must consist of 2–3 members.",
     "Solutions should be innovative, feasible, and impactful.",
     "Each team gets 5 minutes for presentation and 2–3 minutes for Q&A.",
     "All ideas must be related to the Technova theme (Technology & Innovation).",
@@ -96,7 +96,7 @@ const events = [
     description:
       "Act it out without words and let your team guess the technical term in this fun-filled challenge",
     guidelines: [
-    "Each team must consist of 2–3 members.",
+    "Each team must consist of 2–4 members.",
     "Only actions and gestures are allowed — no speaking or lip movement.",
     "Use of mobile phones or external help is strictly prohibited.",
     "Each team will get a fixed time limit to guess the word.",
