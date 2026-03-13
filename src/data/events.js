@@ -19,7 +19,7 @@ const events = [
      guidelines: [
     "Each team must consist of 2–3 members.",
     "Solutions should be innovative, feasible, and impactful.",
-    "Each team gets 5 minutes for presentation and 2–3 minutes for Q&A.",
+    "Each team gets 5 minutes for presentation and 2 minutes for Q&A.",
     "All ideas must be related to the Technova theme (Technology & Innovation).",
     "Solutions should focus on real-world problems using technology such as AI, IoT, Blockchain, Web Applications, Mobile Apps, or Smart Systems.",
   ],
@@ -27,7 +27,7 @@ const events = [
     {
       title: "Idea Submission",
       details:
-        "Teams submit their idea related to the problem statement from the given themes."
+        "Teams submit their idea related to the taken problem statement from the given themes."
     },
     {
       title: "Presentation",
@@ -41,9 +41,9 @@ const events = [
     },
   ],
     time: "8:15 - 9:15 AM",
-    venue: "G01",
+    venue: "F11",
     head: "Sharini - II year",
-    teamSize: "4 Members",
+    teamSize: "3 Members",
     formLink: "https://forms.gle/6wknFvxBgSYFfC7a7",
     image: ideathon
   },
@@ -75,13 +75,14 @@ const events = [
         "Questions based on core technical concepts like programming, AI, cybersecurity, networking, and general technology trends."
     },
     {
-      title: "Round 3 – Rapid Fire / Buzzer Round",
+      title: "Final Scoring",
       details:
-        "Fast-paced questions where teams must answer quickly to gain points."
+        "The team with the highest total correct guesses will be declared as the winner."
     }
+  
   ],
     time: "9:15 - 9:50 AM",
-    venue: "G01",
+    venue: "F11",
     head: "Austin Dijai - II year",
     teamSize: "2-3 Members",
     formLink: "https://forms.gle/4sAMbUUZf6vTwF7k6",
@@ -121,9 +122,9 @@ const events = [
     }
   ],
     time: "10:10 am- 11:30 am",
-    venue: "G01",
+    venue: "F11",
     head: "Venu Aravind - II year",
-    teamSize: "3 Members",
+    teamSize: "4 Members",
     formLink: "https://forms.gle/LMUkjqyyn9MwFEF16",
     image: Dumb
   },
@@ -136,7 +137,7 @@ const events = [
     description:
       "A relay-style coding competition where each member solves one question in sequence.",
     guidelines: [
-      "Teams of 3–4 members.",
+      "Teams of 4 members.",
       "Only one system per team.",
       "Sequential problem solving mandatory.",
       "No internet allowed.",
@@ -149,7 +150,7 @@ const events = [
       { title: "Round 4", details: "Fourth member solves Question 4." }
     ],
     time: "10:10 - 11:30 AM",
-    venue: "A22 Lab",
+    venue: "A22",
     head: "Sharini - II year",
     teamSize: "4 Members",
     formLink: "https://forms.gle/wH3XiwiuDoDR4RPK8",
@@ -177,7 +178,7 @@ const events = [
       { title: "Scoring", details: "Correct answer earns 1 point." }
     ],
     time: "11:30 - 12:40 PM",
-    venue: "G01",
+    venue: "F11",
     head: "Narayani - II year",
     teamSize: "2-3 Members",
     formLink: "https://forms.gle/uWgo6XmNKFa5P4tn7",
@@ -192,7 +193,7 @@ const events = [
     description:
       "Solve clues, decode challenges, and race against time to find the hidden treasure.",
       guidelines: [
-    "Each team must consist of 2–4 members.",
+    "Each team must consist of 3–4 members.",
     "Teams must stay together throughout the event.",
     "Clues must not be damaged or removed from their location.",
     "Use of mobile phones may be restricted as per rules.",
@@ -217,7 +218,7 @@ const events = [
     }
   ],
     time: "11:30 - 12:40 PM",
-    venue: "A22",
+    venue: "A21",
     head: "Fatima Theresa - III year",
     teamSize: "3-4 Members",
     formLink: "https://forms.gle/MUqzvbLk74Q8igJP8",
@@ -243,7 +244,7 @@ const events = [
       { title: "Presentation", details: "Explain technical concept and humor." }
     ],
     time: "1:30 - 2:15 PM",
-    venue: "G01",
+    venue: "F11",
     head: "Narayani - II year",
     teamSize: "2-3 Members",
     formLink: "https://forms.gle/ZU5yVBuFc6tgLqfd7",
@@ -292,12 +293,12 @@ const events = [
     ],
     flow: [
       { title: "Preliminary Round", details: "Debate will be conducted with any oponent team." },
-      { title: "Final Round", details: "Top teams compete." },
+      { title: "Final Round", details: "Selected teams will go to the final round" },
       { title: "Result", details: "Winner and Runner-Up declared." }
       
     ],
     time: "2:15 - 3:00 PM",
-    venue: "G01",
+    venue: "F11",
     head: "Praicy Precilla - III year",
     teamSize: "2-3 Members",
     formLink: "https://forms.gle/SBNedGdMcmDpaCjC6",
