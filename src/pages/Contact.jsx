@@ -4,13 +4,17 @@ import "../index.css";
 function Contact() {
   return (
     <PageWrapper>
-       
+       <div className="hero-conte">
+      <p className="organizer-te">
+            <strong>Department of Information Technology</strong>
+          </p>
+          </div> 
       <div className="contact-wrapper">
 
         {/* Title Section */}
         <h1 className="contact-title">CONTACT US</h1>
         <p className="contact-subtitle">
-          Get in touch with us for any questions about TechNova. We're here to help!
+          Reach out to us for any TechNova-related inquiries. We're here to help!
         </p>
 
         {/* Contact Cards Row */}

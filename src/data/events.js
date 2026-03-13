@@ -18,25 +18,24 @@ const events = [
       "Present innovative solutions to real-world problems and compete with the best ideas.",
      guidelines: [
     "Each team must consist of 2–4 members.",
-    "Ideas must align with the given theme",
     "Solutions should be innovative, feasible, and impactful.",
     "Each team gets 5 minutes for presentation and 2–3 minutes for Q&A.",
-    "Plagiarism is strictly prohibited.",
-    "Judges’ decision will be final."
+    "All ideas must be related to the Technova theme (Technology & Innovation).",
+    "Solutions should focus on real-world problems using technology such as AI, IoT, Blockchain, Web Applications, Mobile Apps, or Smart Systems.",
   ],
       flow: [
     {
-      title: "Round 1 – Idea Submission",
+      title: "Idea Submission",
       details:
         "Teams submit their idea related to the given problem statement."
     },
     {
-      title: "Round 2 – Presentation",
+      title: "Presentation",
       details:
         "Each team presents their solution including problem statement, proposed solution, technology used, target users, implementation plan, and expected impact."
     },
     {
-      title: "Round 3 – Q&A Session",
+      title: "Q&A Session",
       details:
         "Judges evaluate the idea based on innovation, feasibility, impact, and response to questions."
     },
@@ -292,12 +291,13 @@ const events = [
       "Judges decision is final."
     ],
     flow: [
-      { title: "Preliminary Round", details: "All teams debate." },
+      { title: "Preliminary Round", details: "Debate will be conducted with any oponent team." },
       { title: "Final Round", details: "Top teams compete." },
       { title: "Result", details: "Winner and Runner-Up declared." }
+      
     ],
     time: "2:15 - 3:00 PM",
-    venue: "Main Auditorium",
+    venue: "G01",
     head: "Praicy Precilla - III year",
     teamSize: "2-3 Members",
     formLink: "https://forms.gle/SBNedGdMcmDpaCjC6",

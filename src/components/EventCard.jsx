@@ -22,6 +22,7 @@ function EventCard({ event, index }) {
           <h2 className="event-title">{event.heading}</h2>
 
           <p className="event-description">{event.description}</p>
+          <p className="event-time"><strong>Time : </strong>{event.time}</p>
 
           <button
             className="event-button"

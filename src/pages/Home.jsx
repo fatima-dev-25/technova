@@ -19,10 +19,10 @@ function Home() {
       >
     <div className="hero-conten">
       <p className="organizer-tex">
-            <strong>Department of Information Technology</strong>
+            <strong>Department of Information Technology </strong>
           </p>
           <p className="organizer-text">
-            <strong>In association with CSI organizes</strong>
+            <strong>in association with CSI organizes</strong>
           </p>
           </div>
         
