@@ -18,6 +18,7 @@ const events = [
       "Present innovative solutions to real-world problems and compete with the best ideas.",
      guidelines: [
     "Each team must consist of 2–3 members.",
+    "",
     "Solutions should be innovative, feasible, and impactful.",
     "Each team gets 5 minutes for presentation and 2–3 minutes for Q&A.",
     "All ideas must be related to the Technova theme (Technology & Innovation).",
