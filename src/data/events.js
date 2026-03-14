@@ -40,7 +40,7 @@ const events = [
         "Judges evaluate the idea based on innovation, feasibility, impact, and response to questions."
     },
   ],
-    time: "8:15 - 9:15 AM",
+    time: "8:45 - 9:50 AM",
     venue: "F11",
     head: "Sharini - II year",
     teamSize: "3 Members",
@@ -81,8 +81,8 @@ const events = [
     }
   
   ],
-    time: "9:15 - 9:50 AM",
-    venue: "F11",
+    time: "8:45 - 9:50 AM",
+    venue: "A21",
     head: "Austin Dijai - II year",
     teamSize: "2-3 Members",
     formLink: "https://forms.gle/4sAMbUUZf6vTwF7k6",
